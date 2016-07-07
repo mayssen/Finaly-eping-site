@@ -1,0 +1,68 @@
+        <img src="../assets/img/batman.jpg" class="youtube-batman">
+        <img src="../assets/img/league.jpg" class="youtube-league">
+        <img src="../assets/img/maxresdefault.jpg" class="youtube-cod">
+        <img src="../assets/img/metalgear.jpg" class="youtube-metalgear">
+        <img src="../assets/img/minecraft.jpg" class="youtube-minecraft">
+        <img src="../assets/img/oldblood.jpg" class="youtube-oldblood">
+        <img src="../assets/img/the witcher.jpg" class="youtube-the witcher">
+
+      .container-batman
+        width: 100%
+        background: url("../img/batman.jpg")
+        height: 8.128125vw
+        margin-top: 1.5vw
+        background-size: contain
+        background-position: center 0px
+      .container-league
+        background: url("../img/league.jpg")
+        width: 100%
+        height: 8.128125vw
+        margin-top: 2.5vw
+        background-size: contain
+      .container-cod
+        background: url("../img/maxresdefault.jpg")
+        width: 100%
+        height: 8.128125vw
+        margin-top: 2.5vw
+        background-size: contain
+        background-position: center
+      .container-metalgear
+        background: url("../img/metalgear.jpg")
+        width: 100%
+        height: 8.128125vw
+        margin-top: 2.5vw
+        background-size: contain
+      .container-minecraft
+        background: url("../img/minecraft.jpg")
+        width: 100%
+        height: 8.128125vw
+        margin-top: 2.5vw
+        background-size: contain
+
+
+
+
+
+//
+  $( document ).ready(function() {
+
+    smoothScrool(1000);
+    
+
+  });
+  function smoothScrool (duration) {
+  	$('a[href^="#"]').on('click', function(event) {
+
+  	    var target = $( $(this).attr('href') );
+
+  	    if( target.length ) {
+  	        event.preventDefault();
+  	        $('html, body').animate({
+  	            scrollTop: target.offset().top
+  	        }, duration);
+  	    }
+  	});
+  }
+$(window).scroll(function(){
+  youtubeVidScroll();
+//

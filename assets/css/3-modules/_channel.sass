@@ -1,0 +1,257 @@
+.container
+  height: 100%
+  background: #515151
+  .button2
+    height: 60px
+    +display(flex)
+    +align-items(center)
+    +justify-content(center)
+    padding-bottom: 50px
+    .home-cta
+      display: block
+      font-size: 28px
+      background: white
+      text-align: center
+      padding-left: 10px
+      padding-right: 10px
+      color: #aa9225
+      background: #dbdbdb
+      font-family: open sans
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.3)
+      transition: all 0.15s ease-in-out
+      &:hover
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.4)
+        color: #847221
+
+  .channelkicker
+    font:
+      family: OratorSTD
+      size: 21px
+    text-align: center
+    color: white
+    line-height: 1
+    padding-bottom: 30px
+  .channel
+   padding-top: 100px
+   padding-bottom: 40px
+
+
+    // BENCHMARKS LAYOUT FOU9 1400PX
+  .actualstuff
+    overflow: hidden
+    .youtube-strip
+      background: url("../img/background-youtube.jpg") center
+      background-position: center 0px
+      height: 49.89vw
+      width: 14.45vw
+      position: absolute
+      z-index: 2
+      right: 7.5vw
+      overflow: hidden
+
+    .benchmarks
+
+
+      background: #aa9225
+      height: 16.63vw
+      +display(flex)
+      clear: both
+      +align-items(center)
+      +justify-content(space-between)
+      .text
+        display: block
+        text-align: left
+        width: 70%
+        max-width: 1400px
+
+        border: 0
+        h1
+          text-transform: uppercase
+          display: block
+          font:
+            family: OratorSTD
+            size: 30px
+
+          margin: 2.89vw 0 0 2.89vw
+          color: #dbdbdb
+        p
+          display: block
+          margin-left: 2.89vw
+          margin-bottom: 2.89vw
+          font-family: Open Sans
+          font-size: 22px
+          font-weight: 400
+      .video
+        display: block
+        height: 12.88vw
+        width: 22.9vw
+        margin-top: 2.2vw
+        margin-bottom: 2.4vw
+        margin-right: 3%
+        z-index: 3
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.6)
+      // LEAGUE SECTION ABOVE 1400px LAYOUT
+    .league
+
+      background: #dbdbdb
+      height: 16.63vw
+      +display(flex)
+      clear: both
+      +align-items(center)
+      +justify-content(space-between)
+      .text
+        display: block
+        text-align: left
+        width: 70%
+        max-width: 1400px
+
+        border: 0
+        h1
+          text-transform: uppercase
+          display: block
+          font:
+            family: OratorSTD
+            size: 30px
+
+          margin: 2.89vw 0 0 2.89vw
+          color: #aa9225
+        p
+          display: block
+          margin-left: 2.89vw
+          margin-bottom: 2.89vw
+          font-family: Open Sans
+          font-size: 22px
+          font-weight: 400
+      .video
+        display: block
+        height: 12.88vw
+        width: 22.9vw
+        margin-top: 2.2vw
+        margin-bottom: 2.4vw
+        margin-right: 3%
+        z-index: 3
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.6)
+
+
+    // GAMEPLAYS
+
+
+    .gameplays
+      background: #aa9225
+      height: 16.63vw
+      +display(flex)
+      clear: both
+      +align-items(center)
+      +justify-content(space-between)
+      .text
+        display: block
+        text-align: left
+        width: 70%
+        max-width: 1400px
+
+        border: 0
+        h1
+          text-transform: uppercase
+          display: block
+          font:
+            family: OratorSTD
+            size: 30px
+
+          margin: 2.89vw 0 0 2.89vw
+          color: #dbdbdb
+        p
+          display: block
+          margin-left: 2.89vw
+          margin-bottom: 2.89vw
+          font-family: Open Sans
+          font-size: 22px
+          font-weight: 400
+      .video
+        display: block
+        height: 12.88vw
+        width: 22.9vw
+        margin-top: 2.2vw
+        margin-bottom: 2.4vw
+        margin-right: 3%
+        z-index: 3
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.6)
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1400px)
+  .container
+    height: 100%
+    .actualstuff
+      .youtube-strip
+        display: none
+      .benchmarks
+        display: block
+        height: 450px
+        .text
+          min-width: 310px
+          padding-top: 20px
+          margin: 0 auto
+          text-align: center
+        .video
+          margin: 0 auto
+          width: 280px
+          height: 157.5px
+      .league
+        display: block
+        height: 490px
+        .text
+          min-width: 310px
+          padding-top: 20px
+          margin: 0 auto
+          text-align: center
+        .video
+          margin: 0 auto
+          width: 280px
+          height: 157.5px
+      .gameplays
+        display: block
+        height: 490px
+        .text
+          min-width: 310px
+          padding-top: 20px
+          margin: 0 auto
+          text-align: center
+        .video
+          margin: 0 auto
+          width: 280px
+          height: 157.5px
+@media screen and (max-width: 930px)
+  .container
+    height: 100%
+    .actualstuff
+      .benchmarks
+        height: 500px
+      .league
+        height: 540px
+      .gameplays
+        height: 540px
+@media screen and (max-width: 650px)
+  .container
+    height: 100%
+    .actualstuff
+      .benchmarks
+        height: 550px
+      .league
+        height: 650px
+      .gameplays
+        height: 600px
+@media screen and (max-width: 500px)
+  .container
+    height: 100%
+    .actualstuff
+      .benchmarks
+        height: 600px
+      .league
+        height: 690px
+      .gameplays
+        height: 620px

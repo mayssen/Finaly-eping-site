@@ -1,0 +1,74 @@
+header
+  height: 800px
+  background: url("../img/background.jpg") center
+  background-size: cover
+  width: 100%
+  .outer-scrolldown
+    height: 100px
+    text-align: center
+  .scrolldown
+    +size(50px)
+    background: #999
+    display: inline
+  .logo
+    +size(57px)
+    background: transparent
+    float: left
+    margin: 5px 0 0 35px
+  .eping
+    font:
+      family: Kozuka Gothic Pro
+      size: 34px
+      weight: 300
+    text-transform: uppercase
+    float: left
+    margin: 6px 0 0 15px
+  nav
+    float: right
+    padding: 15px 40px 0 0
+    a
+      display: inline-block
+      margin-left: 32px
+
+      color: #333232
+      font:
+        family: ms ui gothic
+        size: 23px
+        weight: 500
+      text-transform: uppercase
+      &:hover
+        color: #000000
+
+  h1
+    text-align: center
+    font:
+      family: ms sans serif
+      size: 154px
+      weight: 400
+    color: white
+    text-transform: uppercase
+    letter-spacing: 0.01em
+    margin-bottom: 0px
+    line-height: 1
+    clear: both
+    padding-top: 220px
+  .kicker
+    font:
+      family: OratorSTD
+      size: 21px
+    text-align: center
+    color: #3a3838
+    line-height: 1
+@media (max-width: 680px)
+  header
+    .eping
+      display: none
+    .logo
+      margin: 10px 50% 0 48%
+    nav
+      float: none
+      text-align: center
+      padding-top: 80px
+      padding-right: 0
+    h1
+      padding-top: 0px
